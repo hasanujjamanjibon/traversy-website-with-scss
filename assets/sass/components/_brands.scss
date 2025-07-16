@@ -1,0 +1,7 @@
+.brand-section {
+  padding: 120px 0;
+  .brand-main {
+    @include flex-items-center-between;
+   
+  }
+}

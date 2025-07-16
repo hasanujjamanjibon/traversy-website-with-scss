@@ -70,6 +70,11 @@ a {
   justify-content: center;
   align-items: flex-start;
 }
+@mixin flex-items-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 ul {
   list-style: none;
 }
