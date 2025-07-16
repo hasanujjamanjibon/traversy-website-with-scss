@@ -60,6 +60,10 @@
             @include flex-items-start-center;
             display: inline-flex;
             gap: 10px;
+            transition: all 0.2s linear;
+            &:hover {
+              color: $primary-color;
+            }
           }
         }
       }

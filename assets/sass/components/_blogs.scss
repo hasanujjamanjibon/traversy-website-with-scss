@@ -24,9 +24,10 @@
         border: 1px solid $border-color;
         img {
           width: 410px;
-          height: 264px;
+          height: 302px;
           flex-shrink: 0;
           border-radius: 20px 20px 0px 0px;
+          object-fit: cover;
         }
         .card-text {
           padding: 30px 30px 40px;
@@ -64,6 +65,10 @@
             @include flex-items-start-center;
             display: inline-flex;
             gap: 10px;
+            transition: all 0.2s linear;
+            &:hover {
+              color: $primary-color;
+            }
           }
         }
       }
