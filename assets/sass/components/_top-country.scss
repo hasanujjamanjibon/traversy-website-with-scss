@@ -1,0 +1,66 @@
+.country-section {
+  padding: 40px 0;
+  .country-main {
+    h2 {
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 55px; /* 110% */
+      margin-bottom: 60px;
+    }
+    .country-card-box {
+      @include flex-items-center-between;
+      .card-box {
+        max-width: 410px;
+        height: 540px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background-color: $country-card-color;
+        img {
+          width: 410px;
+          height: 264px;
+          flex-shrink: 0;
+          border-radius: 20px 20px 0px 0px;
+        }
+        .card-text {
+          padding: 30px 30px 40px;
+          div {
+            @include flex-items-center-between;
+            align-items: baseline;
+            h3 {
+              font-size: 30px;
+              font-style: normal;
+              font-weight: 700;
+            }
+            .currency {
+              font-size: 25px;
+              font-style: normal;
+              font-weight: 700;
+              i {
+                color: $primary-color;
+              }
+            }
+          }
+          p {
+            font-family: $font-secondary;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; /* 157.143% */
+            text-transform: capitalize;
+            margin: 20px 0 30px;
+          }
+          .btn-apply {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px; /* 110% */
+            @include flex-items-start-center;
+            display: inline-flex;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+}
