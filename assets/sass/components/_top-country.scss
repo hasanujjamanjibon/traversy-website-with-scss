@@ -10,6 +10,7 @@
     }
     .country-card-box {
       @include flex-items-center-between;
+      gap: 30px;
       .card-box {
         max-width: 410px;
         height: 540px;
@@ -49,6 +50,7 @@
             line-height: 22px; /* 157.143% */
             text-transform: capitalize;
             margin: 20px 0 30px;
+            color: $card-p-text-color;
           }
           .btn-apply {
             font-size: 20px;
