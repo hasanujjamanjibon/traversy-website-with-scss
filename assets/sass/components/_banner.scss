@@ -1,0 +1,39 @@
+.banner-section {
+  background-color: $banner-bg-color;
+  height: calc(100vh - 102px);
+  padding: 80px 0;
+  .banner-container {
+    @include flex-items-center-start;
+    gap: 30px;
+    img {
+      width: 630px;
+      height: 620px;
+      border-radius: 4px;
+    }
+    .banner-text {
+      .banner-title {
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 88px; /* 110% */
+      }
+      .banner-paragraph {
+        max-width: 561.172px;
+        padding: 30px 0 40px;
+        color: $card-p-text-color;
+        font-family: $font-secondary;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px; /* 150% */
+      }
+      .btn-cta {
+        background-color: $black-color;
+        color: $white-color;
+        &:hover {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}

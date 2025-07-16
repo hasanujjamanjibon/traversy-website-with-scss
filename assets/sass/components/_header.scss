@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px 10px;
     .logo {
       @include flex-items-start-center;
       h3 {
@@ -19,28 +19,28 @@
         gap: 30px;
         li {
           a {
+            @include flex-items-start-center;
             font-family: $font-secondary;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
             line-height: 27px;
             transition: all 0.2s linear;
+            gap: 5px;
             &:hover {
               color: $primary-color;
+            }
+            i {
+              font-size: 10px;
+              font-style: normal;
+              font-weight: 900;
             }
           }
         }
       }
     }
     .btn-contact {
-      padding: 20px 30px;
-      border-radius: 999px;
-      background: $country-card-color;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 22px; /* 110% */
-      transition: all 0.2s linear;
+      background-color: $country-card-color;
       &:hover {
         background-color: $primary-color;
         color: $white-color;
